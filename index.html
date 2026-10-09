@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechVerse — Tu destino premium para accesorios tecnológicos de última generación. Audífonos, smartwatches, parlantes y más.">
+    <title>TechVerse | Tecnología Premium</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--                  HEADER                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header id="header" class="header">
+        <div class="header__container">
+            <a href="#inicio" class="header__logo">
+                <span class="header__logo-icon">⚡</span>
+                <span class="header__logo-text">Tech<span class="header__logo-accent">Verse</span></span>
+            </a>
+
+            <!-- NAV con lista desordenada -->
+            <nav id="nav" class="nav">
+                <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+                    <span class="nav__hamburger"></span>
+                </button>
+                <ul class="nav__list" id="navList">
+                    <li class="nav__item"><a href="#inicio" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="#productos" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="#resenas" class="nav__link">Reseñas</a></li>
+                    <li class="nav__item"><a href="#multimedia" class="nav__link">Media</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--                   MAIN                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <main id="main">
+
+        <!-- ——— SECCIÓN HERO / INICIO ——— -->
+        <section id="inicio" class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <span class="hero__badge">🚀 Nuevos Lanzamientos 2026</span>
+                <h1 class="hero__title">Tecnología que <span class="hero__title-accent">transforma</span> tu mundo</h1>
+                <p class="hero__subtitle">Descubre la nueva generación de accesorios tecnológicos premium. Diseño excepcional, rendimiento sin límites.</p>
+                <div class="hero__actions">
+                    <a href="#productos" class="btn btn--primary">Ver Productos</a>
+                    <a href="#contacto" class="btn btn--outline">Contáctanos</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">50K+</span>
+                        <span class="hero__stat-label">Clientes Felices</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">4.9★</span>
+                        <span class="hero__stat-label">Calificación</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">200+</span>
+                        <span class="hero__stat-label">Productos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ——— SECCIÓN PRODUCTOS (FLEXBOX) ——— -->
+        <section id="productos" class="products">
+            <div class="section__container">
+                <span class="section__tag">Nuestros Productos</span>
+                <h2 class="section__title">Lo mejor en <span class="text-gradient">tecnología</span></h2>
+                <p class="section__description">Cada producto está cuidadosamente seleccionado para ofrecerte la mejor experiencia. Calidad premium, garantía total.</p>
+
+                <div class="products__grid">
+                    <!-- Card 1 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&q=80" alt="Audífonos Inalámbricos AuraMax Pro" class="product-card__image" loading="lazy">
+                            <span class="product-card__badge">Nuevo</span>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Audio</span>
+                            <h3 class="product-card__name">AuraMax Pro</h3>
+                            <p class="product-card__desc">Audífonos over-ear con cancelación de ruido activa y 40h de batería.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$299.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&q=80" alt="Smartwatch Zenith Ultra" class="product-card__image" loading="lazy">
+                            <span class="product-card__badge product-card__badge--hot">🔥 Popular</span>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Wearables</span>
+                            <h3 class="product-card__name">Zenith Ultra</h3>
+                            <p class="product-card__desc">Smartwatch con pantalla AMOLED, GPS integrado y monitoreo de salud 24/7.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$449.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=400&h=400&fit=crop&q=80" alt="Earbuds NovaPods Elite" class="product-card__image" loading="lazy">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Audio</span>
+                            <h3 class="product-card__name">NovaPods Elite</h3>
+                            <p class="product-card__desc">Earbuds true wireless con audio espacial y resistencia al agua IPX5.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$179.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop&q=80" alt="Parlante SonicWave 360" class="product-card__image" loading="lazy">
+                            <span class="product-card__badge product-card__badge--sale">-20%</span>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Parlantes</span>
+                            <h3 class="product-card__name">SonicWave 360</h3>
+                            <p class="product-card__desc">Parlante portátil con sonido envolvente 360° y 18h de batería.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price"><del>$199.99</del> $159.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=400&fit=crop&q=80" alt="Soporte para Laptop ElevateX" class="product-card__image" loading="lazy">
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Accesorios</span>
+                            <h3 class="product-card__name">ElevateX Stand</h3>
+                            <p class="product-card__desc">Soporte ergonómico de aluminio con ángulo ajustable y ventilación.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$89.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1625723044792-44de16ccb4e9?w=400&h=400&fit=crop&q=80" alt="Teclado Mecánico KeyForge RGB" class="product-card__image" loading="lazy">
+                            <span class="product-card__badge">Nuevo</span>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Periféricos</span>
+                            <h3 class="product-card__name">KeyForge RGB</h3>
+                            <p class="product-card__desc">Teclado mecánico compacto 75% con switches cherry y RGB personalizable.</p>
+                            <div class="product-card__footer">
+                                <span class="product-card__price">$139.99</span>
+                                <button class="product-card__btn">Agregar</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ——— SECCIÓN RESEÑAS (CSS GRID) ——— -->
+        <section id="resenas" class="reviews">
+            <div class="section__container">
+                <span class="section__tag">Testimonios</span>
+                <h2 class="section__title">Lo que dicen nuestros <span class="text-gradient">clientes</span></h2>
+                <p class="section__description">Miles de clientes satisfechos avalan la calidad de nuestros productos. Aquí están sus experiencias.</p>
+
+                <div class="reviews__grid">
+                    <!-- Reseña 1 (destacada) -->
+                    <article class="review-card review-card--featured">
+                        <div class="review-card__stars">★★★★★</div>
+                        <blockquote class="review-card__text">"Los AuraMax Pro son increíbles. La cancelación de ruido es de otro nivel, y la batería dura todo lo que prometen. ¡Los mejores audífonos que he tenido!"</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="Avatar de María González" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">María González</strong>
+                                <span class="review-card__role">Diseñadora UX</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Reseña 2 -->
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <blockquote class="review-card__text">"El Zenith Ultra cambió mi rutina de ejercicios. El monitoreo de salud es muy preciso y la pantalla se ve increíble bajo el sol."</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=33" alt="Avatar de Carlos Ramírez" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">Carlos Ramírez</strong>
+                                <span class="review-card__role">Atleta</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Reseña 3 -->
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★☆</div>
+                        <blockquote class="review-card__text">"Compré los NovaPods y estoy sorprendida. El sonido espacial es una experiencia totalmente nueva. Super cómodos para usar todo el día."</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=25" alt="Avatar de Ana López" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">Ana López</strong>
+                                <span class="review-card__role">Ingeniera de Software</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Reseña 4 -->
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <blockquote class="review-card__text">"El KeyForge RGB es el teclado perfecto para programar. Los switches son suaves y la iluminación es espectacular. 100% recomendado."</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=59" alt="Avatar de Diego Torres" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">Diego Torres</strong>
+                                <span class="review-card__role">Desarrollador Full Stack</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Reseña 5 -->
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★★</div>
+                        <blockquote class="review-card__text">"El SonicWave 360 tiene un sonido impresionante para su tamaño. Lo llevo a todas partes, ¡la batería no se acaba nunca!"</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=48" alt="Avatar de Laura Mendez" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">Laura Méndez</strong>
+                                <span class="review-card__role">Fotógrafa</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Reseña 6 -->
+                    <article class="review-card">
+                        <div class="review-card__stars">★★★★☆</div>
+                        <blockquote class="review-card__text">"El ElevateX Stand es exactamente lo que necesitaba. Mi postura mejoró mucho y el diseño en aluminio se ve premium en mi escritorio."</blockquote>
+                        <div class="review-card__author">
+                            <img src="https://i.pravatar.cc/80?img=68" alt="Avatar de Roberto Sánchez" class="review-card__avatar" loading="lazy">
+                            <div>
+                                <strong class="review-card__name">Roberto Sánchez</strong>
+                                <span class="review-card__role">Arquitecto</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ——— SECCIÓN MULTIMEDIA ——— -->
+        <section id="multimedia" class="multimedia">
+            <div class="section__container">
+                <span class="section__tag">Multimedia</span>
+                <h2 class="section__title">Conoce nuestra <span class="text-gradient">experiencia</span></h2>
+                <p class="section__description">Mira nuestro video y descubre por qué TechVerse es la opción preferida de los amantes de la tecnología.</p>
+
+                <div class="multimedia__wrapper">
+                    <!-- Video embebido (iframe) -->
+                    <div class="multimedia__video">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Video promocional de TechVerse" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <!-- Galería de imágenes -->
+                    <div class="multimedia__gallery">
+                        <figure class="multimedia__figure">
+                            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&h=400&fit=crop&q=80" alt="Espacio de trabajo con tecnología TechVerse" class="multimedia__img" loading="lazy">
+                            <figcaption class="multimedia__caption">Nuestro setup premium</figcaption>
+                        </figure>
+                        <figure class="multimedia__figure">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&q=80" alt="Productos TechVerse en uso" class="multimedia__img" loading="lazy">
+                            <figcaption class="multimedia__caption">Tecnología en movimiento</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ——— SECCIÓN CONTACTO (Formspree + Media Queries) ——— -->
+        <section id="contacto" class="contact">
+            <div class="section__container">
+                <div class="contact__wrapper">
+                    <div class="contact__info">
+                        <span class="section__tag">Contacto</span>
+                        <h2 class="section__title section__title--left">Hablemos de <span class="text-gradient">tecnología</span></h2>
+                        <p class="contact__text">¿Tienes preguntas sobre nuestros productos? ¿Necesitas asesoría personalizada? Completa el formulario y te responderemos en menos de 24 horas.</p>
+                        
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <span class="contact__detail-icon">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>info@techverse.com</p>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <span class="contact__detail-icon">📱</span>
+                                <div>
+                                    <strong>Teléfono</strong>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="contact__detail">
+                                <span class="contact__detail-icon">📍</span>
+                                <div>
+                                    <strong>Ubicación</strong>
+                                    <p>Silicon Valley, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario con Formspree -->
+                    <form id="contactForm" class="contact__form" action="https://formspree.io/f/mkjgayyq" method="POST">
+                        <div class="form__group">
+                            <label for="nombre" class="form__label">Nombre completo</label>
+                            <input 
+                                type="text" 
+                                id="nombre" 
+                                name="nombre" 
+                                class="form__input" 
+                                placeholder="Tu nombre" 
+                                required 
+                                autocomplete="name">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Correo electrónico</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form__input" 
+                                placeholder="tu@email.com" 
+                                required 
+                                autocomplete="email">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="mensaje" class="form__label">Mensaje</label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje" 
+                                class="form__textarea" 
+                                placeholder="Escribe tu mensaje aquí..." 
+                                rows="5" 
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn--primary btn--full">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!--                  FOOTER                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer id="footer" class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#inicio" class="header__logo">
+                        <span class="header__logo-icon">⚡</span>
+                        <span class="header__logo-text">Tech<span class="header__logo-accent">Verse</span></span>
+                    </a>
+                    <p class="footer__description">Tu destino premium para accesorios tecnológicos de última generación. Innovación, calidad y diseño excepcional.</p>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Navegación</h4>
+                    <ul class="footer__list">
+                        <li><a href="#inicio" class="footer__link">Inicio</a></li>
+                        <li><a href="#productos" class="footer__link">Productos</a></li>
+                        <li><a href="#resenas" class="footer__link">Reseñas</a></li>
+                        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Soporte</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="footer__link">Política de Devoluciones</a></li>
+                        <li><a href="#" class="footer__link">Garantía</a></li>
+                        <li><a href="#" class="footer__link">Envíos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__heading">Síguenos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Instagram</a></li>
+                        <li><a href="#" class="footer__link">Twitter / X</a></li>
+                        <li><a href="#" class="footer__link">YouTube</a></li>
+                        <li><a href="#" class="footer__link">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer__divider">
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 TechVerse. Todos los derechos reservados.</p>
+                <p class="footer__credits">Diseñado y desarrollado por Indira Vaca</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para navegación móvil y scroll suave -->
+    <script>
+        // Toggle menú móvil
+        const navToggle = document.getElementById('navToggle');
+        const navList = document.getElementById('navList');
+
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('nav__list--open');
+            navToggle.classList.toggle('nav__toggle--active');
+        });
+
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('nav__list--open');
+                navToggle.classList.remove('nav__toggle--active');
+            });
+        });
+
+        // Navegación activa según scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav__link');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('nav__link--active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('nav__link--active');
+                        }
+                    });
+                }
+            });
+
+            // Header con efecto al hacer scroll
+            const header = document.getElementById('header');
+            if (scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Animación de entrada al hacer scroll (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .review-card, .multimedia__video, .multimedia__figure, .contact__info, .contact__form').forEach(el => {
+            el.classList.add('animate-hidden');
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
